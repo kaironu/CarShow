@@ -7,3 +7,4 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "showroom.settings")
 from showroom.wsgi import application
 
 app = application
+handler = application
