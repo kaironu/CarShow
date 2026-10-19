@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="container py-5">
+  <div class="card p-4 mx-auto" style="max-width: 720px; background:#151515; color:#fff;">
+    <h2 class="mb-4">My Profile</h2>
+    <div class="mb-3">
+      <strong>Username</strong>
+      <p>{{ profile_username }}</p>
+    </div>
+    <div class="mb-4">
+      <strong>Email</strong>
+      <p>{{ profile_email|default:"Chưa cập nhật" }}</p>
+    </div>
+    <p class="text-muted">Tài khoản hiện đang được lưu trên trình duyệt và có hiệu lực trong 10 phút.</p>
+    <a href="{% url 'home' %}" class="btn btn-outline-light">Về trang chủ</a>
+  </div>
+</main>
+{% endblock %}
