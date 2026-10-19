@@ -33,7 +33,9 @@ DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
 
 ALLOWED_HOSTS = [ '127.0.0.1',
     'localhost',
-    'prestigelane.pythonanywhere.com',]
+    'prestigelane.pythonanywhere.com',
+    '.vercel.app',
+]
 
 
 # Application definition
